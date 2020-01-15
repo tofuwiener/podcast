@@ -10,7 +10,7 @@
 <h1 style="font-family:verdana;">Adam and Louis Podcast</h1>
 
 
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/About_adam.html?_ijt=3jn6mrlomcsoopnarmjibst9gn">
+<form action="about_adam.html">
     <input type="submit" value="About Adam" />
 </form>
 <form action="http://google.com">
@@ -27,22 +27,22 @@
 <form action="score_badge.html">
     <p>Score Badge    <button type="submit">Click Here!</button></p>
 </form>
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/Slide-out_reviews.html?_ijt=rumbmndcql47sikat5io5ibb3o">
+<form action="slide_out.html">
     <p>Slid-Out Reviews    <button type="submit">Click Here!</button></p>
 </form>
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/Pop-up_reviews.html?_ijt=rumbmndcql47sikat5io5ibb3o">
+<form action="pop_up.html">
     <p>Pop-up Reviews    <button type="submit">Click Here!</button></p>
 </form>
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/On-page_reviews.html?_ijt=8cn871f3s53i850mb9qc8k3nn">
+<form action="on_page.html">
     <p>On-page Reviews    <button type="submit">Click Here!</button></p>
 </form>
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/Reviews_carousel.html?_ijt=rumbmndcql47sikat5io5ibb3o">
+<form action="reviews_carousel.html">
     <p>Reviews Carousel    <button type="submit">Click Here!</button></p>
 </form>
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/Product_stars.html?_ijt=rumbmndcql47sikat5io5ibb3o">
+<form action="product_stars.html">
     <p>Product Stars    <button type="submit">Click Here!</button></p>
 </form>
-<form action="http://localhost:63342/Project%20Alpha/web/Podcast/Places_widget.html?_ijt=rumbmndcql47sikat5io5ibb3o">
+<form action="places_widget.html">
     <p>Places Widget    <button type="submit">Click Here!</button></p>
 </form>
 </body>
