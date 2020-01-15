@@ -45,13 +45,5 @@
 <form action="http://localhost:63342/Project%20Alpha/web/Podcast/Places_widget.html?_ijt=rumbmndcql47sikat5io5ibb3o">
     <p>Places Widget    <button type="submit">Click Here!</button></p>
 </form>
-
-<script>
-	window.fwSettings={
-	'widget_id':8000000013
-	};
-	!function(){if("function"!=typeof window.FreshworksWidget){var n=function(){n.q.push(arguments)};n.q=[],window.FreshworksWidget=n}}()
-</script>
-<script type='text/javascript' src='https://widget.freshworks.com/widgets/8000000013.js' async defer></script>
 </body>
 </html>
