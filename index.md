@@ -8,13 +8,6 @@
 </head>
 <body>
 <h1 style="font-family:verdana;">Adam and Louis Podcast</h1>
-<form action="about_adam.html">
-    <input type="submit" value="About Adam" /></form>
-<form action="http://google.com">
-    <button type="submit">About Louis</button></form>
-<form action="http://google.com">
-    <button type="submit">About Podcasts</button></form>
-
 <h2 style="font-family:Comic sans MS;">The podcast taking the world by storm!</h2>
 <p>The Adam and Louis Podcast (<em>formally the technical team who caused development a huge amount of work due to amending the live database directly and deleting/amending documents without understanding the true impact of those actions</em>) is the best podcast available for all things you, the listener, are not prepared for.
     <br /><br /> After a short time of nobody asking, the hit podcast now has a website and you're on it!</p>
