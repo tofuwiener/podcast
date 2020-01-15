@@ -21,7 +21,7 @@
 </form>
 
 <h2 style="font-family:Comic sans MS;">The podcast taking the world by storm!</h2>
-<p>The Adam and Louis Podcast (<em>formally The Feefo best friends!</em>) is the best podcast available for all things you, the listener, are not prepared for.
+<p>The Adam and Louis Podcast (<em>formally the technical team who caused development a huge amount of work due to amending the live database directly and deleting/amending documents without understanding the true impact of those actions</em>) is the best podcast available for all things you, the listener, are not prepared for.
     <br /><br /> After a short time of nobody asking, the hit podcast now has a website and you're on it!</p>
 
 <form action="http://localhost:63342/Project%20Alpha/web/Podcast/Score_badge.html?_ijt=of1ufl1u0evmm36i6grfob8dkq">
