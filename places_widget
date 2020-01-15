@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        h1   {color: darkorange;}
+        p    {color: black;}
+    </style>
+</head>
+<body>
+<h1 style="font-family:verdana;">Places Widget</h1>
+<br>
+<form action="http://localhost:63342/Project%20Alpha/web/Podcast/website_homepage.html?_ijt=lv7sk1p1ed819mv8l9j65lqdds">
+    <button type="submit">Take me back!</button>
+</form>
+<br>
+<script type='text/javascript' src='https://api.feefo.com/api/assets/js-places-integration/feefo-js-places-integration.js'></script>
+<div id="FPI_Destination"></div>
+<script type='text/javascript'>
+    var feefo = new Feefo.PlacesIntegration({
+        debug: true,
+        destination: document.getElementById('FPI_Destination'),
+        merchantIdentifier: 'adam-tech-test',});
+    feefo.init();
+</script>
+</body>
+</html>
