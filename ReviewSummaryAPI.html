@@ -5,6 +5,7 @@
     This page will query the Feefo Reviews API for the current rating and review count and render out the required markup.
     <!-- can be placed anywhere on the page -->
     <div id="feefoRating"></div>
+
     <script>
 function queryFeefo() {
 	var xhttp = new XMLHttpRequest();
@@ -48,7 +49,7 @@ function queryFeefo() {
 	}
 };
 	// This is where the API call goes
-	xhttp.open("GET","http://api.feefo.com/api/10/reviews/summary/service?merchant_identifier=adam-tech-test", true);
+	xhttp.open("GET","https://api.feefo.com/api/10/reviews/summary/service?merchant_identifier=adam-tech-test", true);
 	xhttp.send();
 }
 </script>
