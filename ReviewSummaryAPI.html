@@ -5,7 +5,6 @@
     This page will query the Feefo Reviews API for the current rating and review count and render out the required markup.
     <!-- can be placed anywhere on the page -->
     <div id="feefoRating"></div>
-
     <script>
 function queryFeefo() {
 	var xhttp = new XMLHttpRequest();
@@ -41,7 +40,7 @@ function queryFeefo() {
 		markup += '<\/script>';
 
 		// Summary to read + link back to Feefo
-		markup += '<br>Example Retail Merchant: Rated '
+		markup += '<br>Adam Tech Test: Rated '
 			+ feefoJSON.rating.rating + "/" + feefoJSON.rating.max
 			+ ' based on ' + feefoJSON.rating.service.count
 			+ ' customer reviews in the last 12 months. <a target="_blank" href="https://www.feefo.com/reviews/adam-tech-test"> See our reviews here</a>\n';
