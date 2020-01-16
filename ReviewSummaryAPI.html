@@ -5,9 +5,7 @@
     This page will query the Feefo Reviews API for the current rating and review count and render out the required markup.
     <!-- can be placed anywhere on the page -->
     <div id="feefoRating"></div>
-    <form action="https://tofuwiener.github.io/podcast/">
-        <button type="submit">Take me back!</button>
-    </form>
+
     <script>
 function queryFeefo() {
 	var xhttp = new XMLHttpRequest();
@@ -46,16 +44,19 @@ function queryFeefo() {
 		markup += '<br>Example Retail Merchant: Rated '
 			+ feefoJSON.rating.rating + "/" + feefoJSON.rating.max
 			+ ' based on ' + feefoJSON.rating.service.count
-			+ ' customer reviews in the last 12 months. <a target="_blank" href="https://www.feefo.com/reviews/example-retail-merchant"> See our reviews here</a>\n';
+			+ ' customer reviews in the last 12 months. <a target="_blank" href="https://www.feefo.com/reviews/adam-tech-test"> See our reviews here</a>\n';
 		document.getElementById("feefoRating").innerHTML = markup;
 	}
 };
-	// This API call will get the service summary. Add your own merchant identifier.
+	// This is where the API call goes
 	xhttp.open("GET","http://api.feefo.com/api/10/reviews/summary/service?merchant_identifier=adam-tech-test", true);
 	xhttp.send();
 }
 </script>
-
+    <br>
+    <form action="https://tofuwiener.github.io/podcast/">
+        <button type="submit">Take me back!</button>
+    </form>
 
     </body>
     </html>
