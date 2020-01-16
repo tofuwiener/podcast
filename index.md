@@ -12,6 +12,10 @@
 <p>The Adam and Louis Podcast (<em>formally the technical team who caused development a huge amount of work due to amending the live database directly and deleting/amending documents without understanding the true impact of those actions</em>) is the best podcast available for all things you, the listener, are not prepared for.
     <br /><br /> After a short time of nobody asking, the hit podcast now has a website and you're on it!</p>
 
+<p id="demo">If you are a member of the Feefo Support Team please click the below.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "You do not belong here."'>Support Team Button</button>
+
 <form action="score_badge.html"><p>Score Badge    <button type="submit">Click Here!</button></p></form>
 <form action="slide_out.html"><p>Slid-Out Reviews    <button type="submit">Click Here!</button></p></form>
 <form action="pop_up.html"><p>Pop-up Reviews    <button type="submit">Click Here!</button></p></form>
