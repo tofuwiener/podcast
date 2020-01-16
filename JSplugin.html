@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<iframe id="FSI_IFrame"
+        style="display: none; "
+        width="0"
+        height="0"
+        src="https://api.feefo.com/api/sales/merchant?merchantidentifier=serious-cricket"
+        data-feefo-email="alex@mindworks.co.uk"
+        data-feefo-orderref="123456789"
+        data-feefo-name="Alex Heath"
+        data-feefo-customerref="123-456-789"
+        data-feefo-products='[{"description":"Cricket Top","productsearchcode":"CT-BLUE","productlink":"https://www.google.com","currency":"GBP","tags":{"saleschannel":"Web","productline":"top"}}]'>
+</iframe>
+
+<!-- Post message handler -->
+<script
+        type="text/javascript"
+        src="https://api.feefo.com/api/assets/js-sale-integration/javascript/feefo-js-post-message-handler.js">
+</script>
+<!-- Initialise the Post Message Handler -->
+<script type="text/javascript">
+    var FPMH = new Feefo.PostMessageHandler();
+    FPMH.init();
+</script>
+</body>
+</html>
