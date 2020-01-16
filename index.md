@@ -22,5 +22,7 @@
 <form action="product_stars.html"><p>Product Stars    <button type="submit">Click Here!</button></p></form>
 <form action="places_widget.html"><p>Places Widget    <button type="submit">Click Here!</button></p></form>
 <form action="ReviewSummaryAPI.html"><p>Review Summary API   <button type="submit">Click Here!</button></p></form>
+<form action="on_page_css.html"><p>On-page CSS  <button type="submit">Click Here!</button></p></form>
+<form action="JSplugin.html"><p>JS Sale Plugin   <button type="submit">Click Here!</button></p></form>
 </body>
 </html>
