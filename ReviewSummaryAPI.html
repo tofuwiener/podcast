@@ -1,0 +1,60 @@
+
+<DOCTYPE html>
+    <html>
+    <body onload="queryFeefo()">
+    Simple merchant homepage example with Organization Schema in JSON+JD Format.
+    This page will query the Feefo Reviews API for the current rating and review count and render out the required markup.
+    <!-- can be placed anywhere on the page -->
+    <div id="feefoRating"></div>
+
+    <script>
+function queryFeefo() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200) {
+		var feefoResponse = this.responseText;
+		var feefoJSON = JSON.parse(feefoResponse);
+
+		var markup = '<script type=\'application/ld+json\'>\n ';
+		markup += '{\n';
+		markup += '  "@context": "http:\/\/schema.org",\n';
+		markup += '  "@type": "Organization",\n';
+		markup += '  "name": "Example Supplier Ltd",\n';
+		markup += '  "logo": "http:\/\/www.examplesupplier.com\/images\/logo.gif",\n';
+		markup += '  "url": "http:\/\/www.examplesupplier.com\/",\n';
+		markup += '  "telephone": "0123456789",\n';
+		markup += '  "address": {\n';
+		markup += '    "@type": "PostalAddress",\n';
+		markup += '    "addressCountry": "GB",\n';
+		markup += '    "addressLocality": "Petersfield",\n';
+		markup += '    "addressRegion": "Hampshire",\n';
+		markup += '    "postalCode": "GU31 4HT",\n';
+		markup += '    "streetAddress": "Heath Road East"\n';
+		markup += '  },\n';
+		markup += '  "aggregateRating": {\n';
+		markup += '    "@type": "AggregateRating",\n';
+		markup += '    "bestRating": ' + feefoJSON.rating.max + ',\n';
+		markup += '    "worstRating": ' + feefoJSON.rating.min + ',\n';
+		markup += '    "reviewCount": ' + feefoJSON.rating.service.count + ',\n';
+		markup += '    "ratingValue": '+ feefoJSON.rating.rating + '\n';
+		markup += '  }\n';
+		markup += '}\n';
+		markup += '<\/script>';
+
+		// Summary to read + link back to Feefo
+		markup += '<br>Example Retail Merchant: Rated '
+			+ feefoJSON.rating.rating + "/" + feefoJSON.rating.max
+			+ ' based on ' + feefoJSON.rating.service.count
+			+ ' customer reviews in the last 12 months. <a target="_blank" href="https://www.feefo.com/reviews/example-retail-merchant"> See our reviews here</a>\n';
+		document.getElementById("feefoRating").innerHTML = markup;
+	}
+};
+	// This API call will get the service summary. Add your own merchant identifier.
+	xhttp.open("GET","http://api.feefo.com/api/10/reviews/summary/service?merchant_identifier=example-retail-merchant", true);
+	xhttp.send();
+}
+</script>
+
+
+    </body>
+    </html>
