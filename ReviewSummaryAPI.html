@@ -7,7 +7,7 @@
     <div id="feefoRating"></div>
 
     <script>
-function queryFeefo() {
+    function queryFeefo() {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 	if (this.readyState == 4 && this.status == 200) {
@@ -15,21 +15,6 @@ function queryFeefo() {
 		var feefoJSON = JSON.parse(feefoResponse);
 
 		var markup = '<script type=\'application/ld+json\'>\n ';
-		markup += '{\n';
-		markup += '  "@context": "http:\/\/schema.org",\n';
-		markup += '  "@type": "Organization",\n';
-		markup += '  "name": "Example Supplier Ltd",\n';
-		markup += '  "logo": "http:\/\/www.examplesupplier.com\/images\/logo.gif",\n';
-		markup += '  "url": "http:\/\/www.examplesupplier.com\/",\n';
-		markup += '  "telephone": "0123456789",\n';
-		markup += '  "address": {\n';
-		markup += '    "@type": "PostalAddress",\n';
-		markup += '    "addressCountry": "GB",\n';
-		markup += '    "addressLocality": "Petersfield",\n';
-		markup += '    "addressRegion": "Hampshire",\n';
-		markup += '    "postalCode": "GU31 4HT",\n';
-		markup += '    "streetAddress": "Heath Road East"\n';
-		markup += '  },\n';
 		markup += '  "aggregateRating": {\n';
 		markup += '    "@type": "AggregateRating",\n';
 		markup += '    "bestRating": ' + feefoJSON.rating.max + ',\n';
