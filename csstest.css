@@ -1,0 +1,39 @@
+/* This changes the on-page title font, weight and size */
+div.feefowidget-header-information-title h2 {
+    font-family: "Courier New", Courier, monospace!important;
+    font-size:30px!important;
+    font-weight:10!important;
+    color: #fc810d!important;
+}
+
+/* This is Feedback based on X reviews */
+.feefowidget-header-reviews-title.feefowidget-header-reviews-title-no-floating {
+    font-family: "Courier New", Courier, monospace!important;
+    font-size:15px!important;
+}
+
+/* This is the star colour (on-page) */
+.feefowidget-star.feefowidget-icon.feefowidget-icon-star.feefowidget-star-colour-yellow {
+    color: #fc810d
+}
+
+/* This is the star container colour */
+.feefowidget-star.feefowidget-icon.feefowidget-icon-star-o.feefowidget-star-colour-yellow {
+    color: #fc810d
+}
+
+/* This is the customer name colour */
+.feefowidget-feedbacks-item .feefowidget-section-rating .feefowidget-display-name {
+    font-family: "Courier New", Courier, monospace!important;
+    color: #fc810d!important;
+}
+
+/* This is the thumbs up colour */
+.feefowidget-icon.feefowidget-icon-thumbs-up {
+    color: #fc810d
+}
+
+/* This is the share colour */
+.feefowidget-icon.feefowidget-icon-share {
+    color: #fc810d
+}
