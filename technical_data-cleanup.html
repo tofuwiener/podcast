@@ -69,6 +69,16 @@ for (i = 0; i < coll.length; i++) {
 <div class="content">
     <p>The Delete Sales function will remove sales based on Order Reference. As well as Sales it will also remove Feedback data related to the sale.</p>
     <p>Requests for deletion will need to meet the below criteria:</p>
+    <p><strong>- Come through as a FreshDesk ticket</strong></p>
+    <p><strong>- Include the Merchant Identifier</strong></p>
+    <p><strong>- Include an Excel .csv document with a list of Order References to be deleted</strong></p>
+    <p><strong>- Include a Reason for the sales to be deleted</strong></p>
+    <p>If ALL the criteria has been met it is still imperative for the Support Analyst to send a confirmation request to the requester before performing the operation. This will need to be along the lines of the below:</p>
+    <p>'Hello,</p>
+    <p>To confirm, you would like me to permanently delete the attached XXX sale lines for the Feefo account MERCHANTNAME. This relates to Sale information and potential Feedback. This is a destructive operation that cannot be reversed. Can you confirm this is correct please?'</p>
+    <p><strong>Delete sale records should ideally be no bigger than 2000 lines per file.</strong></p>
+    <p>Please ensure any spreadsheets only have the order references and nothing else:</p>
+    <img src="sale-deletion.PNG" alt="Sale Deletions"/>
     <script>
 var coll = document.getElementsByClassName("deletesales");
 var i;
