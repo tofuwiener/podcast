@@ -14,6 +14,8 @@
 <br />
 <p id="demo" style="color:blue;">If you are a member of the Feefo Support Team please click the button: <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Support Team!"'>Support Team Button</button></p>
 
+<form action="technical_data-cleanup.html"><p>Technical Scripts    <button type="submit">Click Here!</button></p></form>
+
 <form action="score_badge.html"><p>Score Badge    <button type="submit">Click Here!</button></p></form>
 <form action="slide_out.html"><p>Slid-Out Reviews    <button type="submit">Click Here!</button></p></form>
 <form action="pop_up.html"><p>Pop-up Reviews    <button type="submit">Click Here!</button></p></form>
