@@ -1,1 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #555;
+}
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
 
+<body>
+<button class="collapsible">Data Cleanup</button>
+<div class="content">
+    <p>The Technical team are able to amend data within the Feefo database directly using pre-prepared scripts. Their uses and requirements are listed below. All requirements will need to be met or the request will be declined. Good luck, have fun!</p>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="deletesales">Delete sales/feedback</button>
+<div class="content">
+    <p>The Delete Sales function will remove sales based on Order Reference. As well as Sales it will also remove Feedback data related to the sale.</p>
+    <p>Requests for deletion will need to meet the below criteria:</p>
+    <script>
+var coll = document.getElementsByClassName("deletesales");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="changevalue">Change the Value of a Sale Tag for sales/feedback</button>
+<div class="content">
+    <p>Merchants have the ability to change Sale tag Keys on existing Feefo feedback from one key to another. This will not change the tag VALUE and can only be done from an A to B methodology meaning one key for all instances it appears will be changed to the new key. </p>
+    <p>In order to process the request we will require the below on a ticket:</p>
+    <script>
+var coll = document.getElementsByClassName("changevalue");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="movesales">Move sales and feedback from one account to another</button>
+<div class="content">
+    <p>The Sale Mover function will move sales based on Order Reference and the From Merchant and To Merchant. As well as Sales it will also move Feedback data related to the sales.</p>
+    <p>Requests for the Sale Mover will need to meet the below criteria:</p>
+    <script>
+var coll = document.getElementsByClassName("movesales");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="addsaletag">Add Sale Tag Key and Value to existing feedback</button>
+<div class="content">
+    <p>Merchants have the ability to add Sale tag key:values on to existing Feefo feedback. This will apply these as an additional tag on the feedback. It is possible to apply the new key:value to multiple sales through the same function. </p>
+    <p>The sale tags can be added as long as the below is provided:</p>
+    <script>
+var coll = document.getElementsByClassName("addsaletag");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="removetags">Remove Sale tags from existing sales/feedback</button>
+<div class="content">
+    <p>Merchants have the ability to add Sale tag key:values on their sales and therefore Feefo feedback. On occasion we can remove those Sale tags. </p>
+    <p>This function will remove ALL INSTANCES of a tag key:value pair based on the KEY entered.</p>
+    <p>The sale tags can be added as long as the below is provided:</p>
+    <script>
+var coll = document.getElementsByClassName("removetags");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="changeslug">Change Merchant Slug/Identifier</button>
+<div class="content">
+    <p>It is possible to change a merchant identifier, historically called a merchant slug, through a function on the Task Controller. This will only allow the change of one merchant identifier to an entirely new one the system has not seen before. </p>
+    <p>NOTE: It is important to understand the implications of changing a merchant identifier. As such please send a note similar to the below to the requester to confirm they understand the results of the change: </p>
+    <script>
+var coll = document.getElementsByClassName("changeslug");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="changeorderref">Changing order references from A to B for sales/feedback</button>
+<div class="content">
+    <p>The Changing order references from A to B function allows us to alter existing order references on existing Feefo Reviews. This can only be done from an A to B methodology meaning one reference can only become one other reference value.</p>
+    <p>Requests for order ref changes will need to meet the below criteria:</p>
+    <script>
+var coll = document.getElementsByClassName("changeorderref");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="googlecatchup">Google Catchup Feed</button>
+<div class="content">
+    <p>If a merchant has collected feedback that has not been send to Google, for example their account has been private, that feedback can be sent to Google via a catchup feed. This can only be done for Service feedback.</p>
+    <p>This process is now viable through the Task Controller if the below criteria are met:</p>
+    <script>
+var coll = document.getElementsByClassName("googlecatchup");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="anonymise">Anonymise Feedback</button>
+<div class="content">
+    <p>Consumers have the right to appear as anonymous on the feedback they leave. This is an option to choose when leaving feedback but this is sometimes missed and we will need to retrospectively amend a feedback review to be anonymous. </p>
+    <p>It is possible to amend multiple feedback reviews to anonymous with the same function. This process is now viable through the Task Controller if the below criteria are met:</p>
+    <script>
+var coll = document.getElementsByClassName("anonymise");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="changetitle">Change Feedback Title</button>
+<div class="content">
+    <p>It is possible to amend the Summary/Title of a feedback. It is also possible to remove the Summary/Title entirely.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("changetitle");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="consumerdetails">Change Consumer Details on a sale/feedback</button>
+<div class="content">
+    <p>It is possible to amend the Consumer contact details attached to a sale. This includes changing the consumer name, consumer display name, consumer email and the consumer ID.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("consumerdetails");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="removeir">Remove Imported Reviews</button>
+<div class="content">
+    <p>We are able to remove imported service and product reviews from a Feefo account after being imported.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("removeir");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="editmr">Edit Merchant Response</button>
+<div class="content">
+    <p>We are able to edit a merchants response to a review.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("editmr");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="removemr">Remove Merchant Response</button>
+<div class="content">
+    <p>We are able to remove a merchants response to a review. </p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("removemr");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="removeaccount">Remove Feefo account from a Group Level</button>
+<div class="content">
+    <p>It is possible to move Feefo accounts from under a group level on the Feefo Hub to act as a stand-alone Feefo account.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("removeaccount");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="moveaccount">Add Feefo accounts to a Group Level</button>
+<div class="content">
+    <p>It is possible to move Feefo accounts under a group level on the Feefo Hub to act as a parent to those sub accounts.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("moveaccount");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="changeprod">Change product details for sale/feedback</button>
+<div class="content">
+    <p>It is possible to alter the SKU, including product details as a result, of a review based on specific Order Reference.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("changeprod");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="exportproducts">Export a Merchants Product Details</button>
+<div class="content">
+    <p>In an effort to make more accurate Manual Product Catalogues and manage products for a merchant we have the ability to directly export the product information a merchant has into an Excel file.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("exportproducts");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="amendname">Amend a Merchants Display Name</button>
+<div class="content">
+    <p>A merchant is able to leave a display name when replying to feedback but this cannot be changed unless run through a script. We are able to amend the display name of a merchant based on each order.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("amendname");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="deleteproducts">Delete products for a merchant</button>
+<div class="content">
+    <p>In the case that a product is duplicated or requires manual data cleanup of which a Manual Product Catalogue cannot resolve it is possible to use a script to manually remove the products.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("deleteproducts");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+<button class="autotrader">Set Auto Trader ID</button>
+<div class="content">
+    <p>We are able to set a merchant Campaign to send review content to Auto Trader by applying an Auto Trader ID to that Campaign directly.</p>
+    <p>We are able to process these requests as long as the below has been completed by the Support Agent:</p>
+    <script>
+var coll = document.getElementsByClassName("autotrader");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</div>
+
+</body>
+</html>
