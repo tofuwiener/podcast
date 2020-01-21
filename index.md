@@ -17,7 +17,7 @@
 <form action="technical_data-cleanup.html"><p>Technical Scripts    <button type="submit">Click Here!</button></p></form>
 
 <form action="score_badge.html"><p>Score Badge    <button type="submit">Click Here!</button></p></form>
-<form action="slide_out.html"><p>Slid-Out Reviews    <button type="submit">Click Here!</button></p></form>
+<form action="slide_out.html"><p>Slide-Out Reviews    <button type="submit">Click Here!</button></p></form>
 <form action="pop_up.html"><p>Pop-up Reviews    <button type="submit">Click Here!</button></p></form>
 <form action="on_page.html"><p>On-page Reviews    <button type="submit">Click Here!</button></p></form>
 <form action="reviews_carousel.html"><p>Reviews Carousel    <button type="submit">Click Here!</button></p></form>
